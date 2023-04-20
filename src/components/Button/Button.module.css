@@ -1,0 +1,57 @@
+.block {
+  text-align: center;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+}
+
+.buttonText {
+  margin: 0;
+}
+
+.sizeM {
+  padding: 10px 25px;
+}
+
+.sizeM .buttonText {
+    font-size: var(--font-size-m);
+}
+
+.sizeL {
+    padding: 18px 30px;
+}
+
+.sizeL .buttonText {
+    font-size: var(--font-size-l);
+}
+
+.primary {
+  background: var(--primary-element-color);
+  color: var(--invert-text-color);
+  transition: 0.2s;
+}
+
+.primary:hover {
+  background: var(--primary-hover-color);
+  transition: 0.2s;
+}
+
+.invert {
+  background-color: inherit;
+  border: 2px solid var(--primary-element-color);
+}
+
+.invert:hover {
+  border-color: var(--primary-hover-color);
+  transition: 0.2s;
+}
+
+.disabled {
+  background: var(--primary-element-color);
+  opacity: 0.25;
+  cursor: default;
+}
+
+.widthFull {
+    width: 100%;
+}

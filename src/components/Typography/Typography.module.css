@@ -1,0 +1,161 @@
+.block {
+  text-align: left;
+  margin: 0;
+  letter-spacing: 0em;
+}
+
+.h1 {
+  font-size: var(--font-size-h1);
+  font-weight: 800;
+  line-height: 65px;
+}
+
+.h2 {
+  font-size: var(--font-size-h2);
+  font-weight: 700;
+  line-height: 58px;
+}
+
+.h3 {
+  font-size: var(--font-size-h3);
+  font-weight: 700;
+  line-height: 48px;
+}
+
+.h4 {
+  font-size: var(--font-size-h4);
+  font-weight: 700;
+  line-height: 42px;
+}
+
+.defaultColor {
+  color: var(--default-text-color);
+}
+
+.secondaryColor {
+  color: var(--secondary-text-color);
+}
+
+.elementPrimaryColor {
+  color: var(--primary-element-color);
+}
+
+.invertColor {
+  color: var(--invert-text-color);
+}
+
+.errorColor {
+  color: var(--error-color);
+}
+
+.a {
+  font-size: var(--font-size-a);
+  font-weight: 700;
+  line-height: 29px;
+  text-decoration: none;
+
+  color: var(--primary-element-color);
+
+  transition: 0.2s;
+}
+
+.a:hover {
+  color: var(--primary-hover-color);
+  transition: 0.2s;
+}
+
+.p {
+  margin: 0;
+}
+
+.cursive {
+  font-style: italic;
+}
+
+.sizeS {
+  font-size: var(--font-size-s);
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.sizeM {
+  font-size: var(--font-size-m);
+  font-weight: 400;
+  line-height: 29px;
+}
+
+.sizeL {
+  font-size: var(--font-size-l);
+  font-weight: 400;
+  line-height: 32px;
+}
+
+.bold {
+  font-weight: 700;
+}
+
+.caps {
+  font-style: normal;
+  font-weight: 700;
+  font-size: var(--font-size-caps);
+  line-height: 140%;
+  text-transform: uppercase;
+}
+
+.caps.sizeM {
+  letter-spacing: 0.15em;
+}
+
+.caps.sizeL {
+  letter-spacing: 0.2em;
+}
+
+.h1Mobile {
+  font-size: var(--font-size-h1-mobile);
+  font-weight: 700;
+  line-height: 38px;
+}
+
+.h2Mobile {
+  font-size: var(--font-size-h2-mobile);
+  font-weight: 700;
+  line-height: 36px;
+}
+
+.h3Mobile {
+  font-size: var(--font-size-h3-mobile);
+  font-weight: 700;
+  line-height: 31px;
+}
+
+.h4Mobile {
+  font-size: var(--font-size-h4-mobile);
+  font-weight: 700;
+  line-height: 24px;
+}
+
+@media (max-width: 500px) {
+  .h1 {
+    font-size: var(--font-size-h1-mobile);
+    font-weight: 700;
+    line-height: 38px;
+  }
+
+  .h2 {
+    font-size: var(--font-size-h2-mobile);
+    font-weight: 700;
+    line-height: 36px;
+  }
+
+  .h3 {
+    font-size: var(--font-size-h3-mobile);
+    font-weight: 700;
+    line-height: 31px;
+  }
+
+  .h4 {
+    font-size: var(--font-size-h4-mobile);
+    font-weight: 700;
+    line-height: 24px;
+  }
+}

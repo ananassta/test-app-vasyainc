@@ -1,0 +1,81 @@
+.block {
+  padding: 0 60px 90px;
+  display: flex;
+  flex-direction: column;
+  gap: 27px;
+  width: 65%;
+}
+
+.blockWithLine {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  gap: 38px;
+  padding: 0 23px;
+}
+
+.verticalLine {
+  border-left: 4px solid var(--primary-element-color);
+  height: inherit;
+}
+
+.blockWithLineText {
+  padding: 22px 0;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+th {
+  border-bottom: 2px solid var(--primary-element-color);
+  padding-bottom: 12px;
+}
+
+td {
+  padding: 22px 0;
+  border-bottom: 2px solid var(--table-border-color);
+  vertical-align: top;
+}
+
+.tableHeaderSmall {
+  width: 20%;
+}
+
+.tableHeaderBig {
+  width: 60%;
+}
+
+.tableMiddleCell {
+  padding-right: 24px;
+}
+
+@media (max-width: 900px) {
+  .block {
+    width: 85%;
+  }
+}
+
+@media (max-width: 500px) {
+  .block {
+    padding: 0 20px 77px;
+    width: 90%;
+  }
+  .table {
+    overflow-x: auto;
+  }
+  table {
+    width: 900px;
+  }
+  .table::-webkit-scrollbar {
+    height: 3px;
+  }
+  .table::-webkit-scrollbar-track {
+    background-color: var(--table-border-color);
+    border-radius: 0;
+  }
+  .table::-webkit-scrollbar-thumb {
+    background-color: var(--primary-element-color);
+    border-radius: 0;
+  }
+}

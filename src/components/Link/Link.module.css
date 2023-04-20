@@ -1,0 +1,26 @@
+.block {
+  background-color: var(--link-background-color);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  padding-left: 17px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  gap: 20px;
+  word-break: break-all;
+}
+
+.image {
+  width: 25px;
+  height: 25px;
+}
+
+@media (max-width: 500px) {
+  .block {
+    align-items: flex-start;
+    word-break: break-all;
+  }
+}

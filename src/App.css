@@ -1,0 +1,37 @@
+.App {
+  text-align: center;
+
+  --default-text-color: #333;
+  --default-text-color-opacity: #33333380;
+  --secondary-text-color: #adadad;
+  --invert-text-color: #fff;
+  --primary-element-color: #00a4f7;
+  --primary-hover-color: #128ace;
+  --link-background-color: #fff2c3;
+  --table-border-color: #dadada;
+  --form-background-color: #faf9fa;
+  --error-color:  #EA4F24;
+
+  --font-size-h1: 54px;
+  --font-size-h2: 48px;
+  --font-size-h3: 40px;
+  --font-size-h4: 30px;
+  --font-size-h1-mobile: 32px;
+  --font-size-h2-mobile: 30px;
+  --font-size-h3-mobile: 26px;
+  --font-size-h4-mobile: 20px;
+  --font-size-s: 16px;
+  --font-size-m: 18px;
+  --font-size-l: 20px;
+  --font-size-a: 18px;
+  --font-size-caps: 16px;
+
+  --header-shadow: 0px 5px 25px rgba(0, 0, 0, 0.05);
+  --modal-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+  --main-font-family: "Montserrat", sans-serif;
+
+  font-family: var(--main-font-family);
+  color: var(--default-text-color);
+  background-color: var(--invert-text-color);
+}

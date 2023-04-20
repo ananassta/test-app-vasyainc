@@ -1,0 +1,97 @@
+.block {
+  padding: 0 60px 190px;
+  position: relative;
+}
+
+.topInfoBlock {
+  display: flex;
+  flex-direction: column;
+  gap: 19px;
+  padding-bottom: 26px;
+  width: 70%;
+}
+
+.bottomInfoBlock {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  padding-top: 32px;
+  width: 70%;
+}
+
+.gallery {
+  display: flex;
+  flex-direction: row;
+  gap: 22px;
+  position: relative;
+}
+
+.image {
+  width: 202px;
+  height: 130px;
+  border-radius: 8px;
+
+  object-fit: cover;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.image:hover {
+  opacity: 0.8;
+  transition: 0.2s;
+}
+
+.imageCover {
+  background-color: var(--default-text-color-opacity);
+  position: absolute;
+  width: 202px;
+  height: 130px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 0;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.imageCover:hover {
+  opacity: 0.8;
+  transition: 0.2s;
+}
+
+@media (max-width: 900px) {
+  .topInfoBlock {
+    width: 100%;
+  }
+  .bottomInfoBlock {
+    width: 100%;
+  }
+}
+
+@media (max-width: 500px) {
+  .block {
+    padding: 0 20px 179px;
+  }
+  .topInfoBlock {
+    padding-bottom: 20px;
+    gap: 20px;
+    width: 100%;
+  }
+  .gallery {
+    gap: 10px;
+  }
+  .image {
+    width: 162px;
+    height: 104px;
+  }
+  .bottomInfoBlock {
+    padding-top: 28px;
+    gap: 20px;
+    width: 100%;
+  }
+  .imageCover {
+    width: 162px;
+    height: 104px;
+  }
+}

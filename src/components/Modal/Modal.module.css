@@ -1,0 +1,72 @@
+.modal {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  animation-name: appear;
+  animation-duration: 300ms;
+}
+
+.modalDialog {
+  width: 100%;
+  max-width: 550px;
+  background: var(--invert-text-color);
+  position: relative;
+  margin: 0 20px;
+  max-height: calc(100vh - 40px);
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  box-shadow: var(--modal-shadow);
+  -webkit-animation-name: animatetop;
+  -webkit-animation-duration: 0.4s;
+  animation-name: slide-in;
+  animation-duration: 0.5s;
+  border-radius: 8px;
+}
+
+.modalHeader {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.modalClose {
+  cursor: pointer;
+  padding: 0 10px;
+  margin: 0;
+  font-size: var(--font-size-h3);
+}
+
+.modalBody {
+  overflow: auto;
+}
+
+.modalContent {
+  padding: 1rem;
+  display: flex;
+  justify-content: center;
+}
+
+@keyframes appear {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slide-in {
+  from {
+    transform: translateY(-150px);
+  }
+  to {
+    transform: translateY(0);
+  }
+}

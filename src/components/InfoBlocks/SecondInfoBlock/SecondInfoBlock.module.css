@@ -1,0 +1,58 @@
+.block {
+  padding: 0 60px 44px;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.infoBlock {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  width: 70%;
+}
+
+.galleryBlock {
+  padding-top: 20px;
+  display: flex;
+  flex-direction: row;
+  gap: 21px;
+  flex-wrap: wrap;
+  position: relative;
+}
+
+.image {
+  border-radius: 8px;
+  width: 314px;
+  height: 170px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.image:hover {
+  transition: 0.2s;
+  transform: scale(1.1);
+}
+
+@media (max-width: 900px) {
+  .infoBlock {
+    width: 100%;
+  }
+}
+
+@media (max-width: 500px) {
+  .block {
+    padding: 0 20px 41px;
+  }
+  .infoBlock {
+    width: 100%;
+  }
+  .galleryBlock {
+    gap: 12px;
+    padding-top: 0;
+  }
+  .image {
+    width: 162px;
+    height: 88px;
+  }
+}

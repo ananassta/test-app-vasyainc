@@ -1,0 +1,26 @@
+.block {
+  box-shadow: var(--header-shadow);
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  gap: 10px;
+  padding: 20px 30px;
+}
+
+.mainMenu {
+  display: grid;
+  grid-template-columns: 1fr 2.5fr;
+  gap: 10px;
+}
+
+@media (max-width: 500px) {
+  .block {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+  }
+  .mainMenu {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}

@@ -1,0 +1,36 @@
+.block {
+  display: grid;
+  grid-template-columns: 7fr 3fr;
+  padding: 0 60px 43px;
+  gap: 20px;
+}
+
+.leftBlock {
+  display: flex;
+  flex-direction: column;
+  gap: 27px;
+}
+
+.customUlLi {
+  list-style-image: url("./Ellipse.svg");
+  padding-bottom: 11px;
+  padding-left: 30px;
+}
+
+.customOlLi {
+  color: var(--primary-element-color);
+  font-weight: 700;
+  padding-bottom: 11px;
+  padding-left: 30px;
+}
+
+@media (max-width: 500px) {
+  .block {
+    padding: 0 20px 44px;
+    display: flex;
+    flex-direction: column;
+  }
+  .leftBlock {
+    gap: 17px;
+  }
+}
