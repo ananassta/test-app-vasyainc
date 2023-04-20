@@ -145,7 +145,7 @@
   transition: 0.5s;
 }
 
-@media (max-width: 900px) {
+@media (max-width: 1390px) {
   .alert {
     top: 565px;
   }
